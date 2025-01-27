@@ -24,7 +24,6 @@ const Navbar = () => {
                         <li className="w-full hover:text-white">Skills</li>
                         <li className="w-full hover:text-white">Experience</li>
                         <li className="w-full hover:text-white">Project</li>
-                        <li className="w-full hover:text-white">Contact</li>
                     </ul>
                 </div>
             </div>
@@ -64,7 +63,6 @@ const Navbar = () => {
                                 <li className="w-full hover:text-white">Skills</li>
                                 <li className="w-full hover:text-white">Experience</li>
                                 <li className="w-full hover:text-white">Project</li>
-                                <li className="w-full hover:text-white">Contact</li>
                             </motion.ul>
                         </motion.div>
                     )}
