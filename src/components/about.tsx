@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import picture from "../../public/assets/IMG20250116182216.jpg"
+import picture from "../../public/assets/about.jpg"
 import { highlightFont, mainFont, buttonFont } from "../app/fonts/fonts"
 import { SiGmail } from "react-icons/si";
 
@@ -10,7 +10,7 @@ const About = () => {
             <div className="mt-7 md:mt-16 h-full lg:h-[80vh] w-full flex flex-col justify-start items-center">
                 <div className="mt-24 lg:mt-0 h-24 lg:pt-0 lg:h-1/3 w-full flex justify-center items-center text-3xl lg:text-5xl">
                     <h2 className="font-semibold">
-                        <span className="">More about</span>
+                        <span className="bg-gradient-to-tl from-red-600 via-gray-200 to-gray-600 bg-clip-text text-transparent">More about</span>
                         <span className={`${highlightFont.className} italic text-white`}> Myself</span>
                     </h2>
                 </div>

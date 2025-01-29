@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: linear-gradient(90deg, #000000, #121212, #282828);
     --foreground: #d3d2d2;
   }
 }

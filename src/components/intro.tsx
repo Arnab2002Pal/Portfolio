@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import cropImage from "../../public/assets/crop.jpg";
+import cropImage from "../../public/assets/profile.jpg";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -31,10 +31,14 @@ const Intro = () => {
                 <div className="h-full w-full flex flex-col justify-start items-center">
                     <div className="h-full w-full flex flex-col justify-start items-center text-white">
                         <div>
-                            <h1 className="text-xl lg:text-4xl font-semibold ">Arnab Kumar Pal</h1>
+                            <h1
+                                className="text-xl lg:text-4xl font-bold bg-gradient-to-tr from-gray-600 via-gray-200 to-gray-600 bg-clip-text text-transparent">
+                                Arnab Kumar Pal
+                            </h1>
                         </div>
+
                         <div className="text-sm lg:text-lg font-thin mt-1">
-                            <p>Full Stack Developer</p>
+                            <p>Full Stack Developer | Software Engineer</p>
                         </div>
                     </div>
                     <div className="w-[20rem] lg:w-[40rem] full relative mt-9 lg:mt-10">

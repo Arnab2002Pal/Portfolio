@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-three/fiber": "^8.17.12",
+    "@tabler/icons-react": "^3.29.0",
     "@tsparticles/engine": "^3.8.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.0",

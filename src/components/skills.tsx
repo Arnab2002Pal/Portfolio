@@ -16,6 +16,10 @@ import { FaDocker } from "react-icons/fa";
 import { DiNginx } from "react-icons/di";
 import { FaCloudflare } from "react-icons/fa6";
 import { FaAws } from "react-icons/fa";
+import { RiOpenaiFill } from "react-icons/ri";
+import { RiGeminiFill } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
+
 
 const Skills = () => {
     const programming_languages = [
@@ -55,6 +59,16 @@ const Skills = () => {
 
     const database_tools = [
         {
+            name: "OpenAI",
+            icon: <RiOpenaiFill size={30} className="text-white" />,
+            shadowColor: "rgba(225, 225, 225, 0.5)" // Blue shadow
+        },
+        {
+            name: "Gemini",
+            icon: <RiGeminiFill size={30} className="text-blue-500" />,
+            shadowColor: "rgba(59, 130, 246, 0.5)" // Blue shadow
+        },
+        {
             name: "MongoDB",
             icon: <BiLogoMongodb size={30} className="text-green-500" />,
             shadowColor: "rgba(34, 197, 94, 0.5)" // Green shadow
@@ -89,6 +103,11 @@ const Skills = () => {
             icon: <FaAws size={30} className="text-orange-500" />,
             shadowColor: "rgba(251, 146, 60, 0.5)" // Orange shadow
         },
+        {
+            name: "Github",
+            icon: <FaGithub size={30} className="text-white" />,
+            shadowColor: "rgba(225, 225, 225, 0.5)" // Orange shadow
+        },
     ];
 
 
@@ -97,24 +116,24 @@ const Skills = () => {
     const [databaseToolsIndex, setDatabaseToolsIndex] = useState<number | null>(null);
 
     return (
-        <div className="h-[90vh]">
-            <div className="flex flex-col justify-center items-center">
-                <div className={`${mainFont.className} w-full h-[18vh] flex flex-col justify-center items-center`}>
-                    <h3 className="text-white text-2xl md:text-5xl font-semibold">Skills <span className={`${highlightFont.className}`}>&</span> Experience</h3>
-                    <p className="text-sm md:text-xl mt-2 text-center">
+        <div className="h-screen lg:h-[90vh] mb-10 md:mb-0 flex justify-center items-start">
+            <div className="flex flex-col justify-center items-start mt-20">
+                <div className={`${mainFont.className} w-full h-[18vh] flex flex-col justify-center items-center pb-10`}>
+                    <h3 className="text-2xl md:text-5xl font-semibold py-2 bg-gradient-to-tl from-gray-600 via-gray-200 to-gray-600 bg-clip-text text-transparent"><span className={`${highlightFont.className} text-white `}>Skills</span> That Power My Craft</h3>
+                    <p className="text-sm md:text-xl mt-3 text-center">
                         The skills, tools, and technologies I use:
                     </p>
                     <div className="w-5/6 md:w-2/3 bg-white shadow-softCircle"></div>
                 </div>
-                <div className="w-full h-auto lg:h-[70vh] flex justify-center items-center">
-                    <div className="mb-10 md:mb-36 text-sm md:text-xl w-full md:w-4/5 h-auto md:h-4/5 rounded-2xl md:border-zinc-400 md:border-b-2 flex flex-col justify-center items-center px-4 md:px-8 gap-5">
+                <div className="w-full flex justify-center items-center">
+                    <div className="text-sm md:text-xl w-full md:w-4/5 md:h-4/5 rounded-2xl flex flex-col justify-center items-center px-4 md:px-8 md:py-5 lg:py-10 gap-2 md:bg-neutral-800">
 
                         {/* Programming Languages Section */}
-                        <div className="flex flex-wrap  gap-4 items-center justify-center">
+                        <div className="flex flex-wrap gap-3 items-center justify-center">
                             {programming_languages.map((language, index) => (
                                 <div
                                     key={index}
-                                    className="flex items-center justify-center text-white font-medium bg-neutral-800 w-28 h-10 md:w-36 md:h-10 rounded-2xl cursor-default transition-shadow duration-300"
+                                    className="flex items-center justify-center  font-medium bg-neutral-900 w-28 h-10 md:w-36 md:h-10 rounded-2xl cursor-default transition-shadow duration-600"
                                     style={{
                                         boxShadow:
                                             languageIndex === index
@@ -132,11 +151,11 @@ const Skills = () => {
                         </div>
 
                         {/* Web Technologies Section */}
-                        <div className="flex flex-wrap gap-4 items-center justify-center">
+                        <div className="flex flex-wrap gap-3 items-center justify-center">
                             {web_technologies.map((tech, index) => (
                                 <div
                                     key={index}
-                                    className="flex items-center justify-center text-white font-medium bg-neutral-800 w-28 h-10 md:w-36 md:h-10 rounded-2xl cursor-default transition-shadow duration-300"
+                                    className="flex  items-center justify-center font-medium bg-neutral-900 w-28 h-10 md:w-36 md:h-10 rounded-2xl cursor-default transition-shadow duration-300"
                                     style={{
                                         boxShadow:
                                             techIndex === index
@@ -154,7 +173,7 @@ const Skills = () => {
                         </div>
 
                         {/* Database & Tools Section */}
-                        <div className="flex flex-wrap lg:flex-nowrap gap-4 items-center justify-center mb-10 lg:mb-0">
+                        <div className="flex flex-wrap  gap-3 items-center justify-center">
                             {database_tools.map((tool, index) => (
                                 <div
                                     key={index}
@@ -166,7 +185,7 @@ const Skills = () => {
                                     }}
                                     onMouseEnter={() => setDatabaseToolsIndex(index)}
                                     onMouseLeave={() => setDatabaseToolsIndex(null)}
-                                    className="flex items-center justify-center text-white font-medium bg-neutral-800 w-28 h-10 md:w-36 md:h-10 rounded-2xl cursor-default transition-shadow duration-300"
+                                    className="flex items-center justify-center font-medium bg-neutral-900 w-28 h-10 md:w-36 md:h-10 rounded-2xl cursor-default transition-shadow duration-300"
                                 >
                                     <div className="text-xs md:text-sm font-semibold">
                                         {databaseToolsIndex === index ? tool.name : tool.icon}
