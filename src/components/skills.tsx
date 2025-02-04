@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { highlightFont, mainFont, buttonFont } from "../app/fonts/fonts";
+import { highlightFont, mainFont } from "../app/fonts/fonts";
 import { database_tools, programming_languages, web_technologies } from '@/app/utils/data';
 
 
@@ -7,10 +7,6 @@ const Skills = () => {
     const [languageIndex, setlanguageIndex] = useState<number | null>(null);
     const [techIndex, setTechIndex] = useState<number | null>(null);
     const [databaseToolsIndex, setDatabaseToolsIndex] = useState<number | null>(null);
-
-    const style = {
-        transform: "rotate(-13deg)"
-    }
 
     return (
         <div className="h-screen lg:h-[90vh] mb-10 md:mb-0 flex justify-center items-start">

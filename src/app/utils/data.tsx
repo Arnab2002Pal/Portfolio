@@ -1,5 +1,5 @@
-import image1 from "../../public/assets/KuberSS.png"
-import error_Image from "../../public/assets/error_image.jpg"
+import image1 from "../../../public/assets/KuberSS.png"
+import error_Image from "../../../public/assets/error_image.jpg"
 import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiElixir } from "react-icons/si";

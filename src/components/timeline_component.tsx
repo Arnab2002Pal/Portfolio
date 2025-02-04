@@ -1,5 +1,5 @@
 import React from 'react'
-import { highlightFont, mainFont, buttonFont } from "../app/fonts/fonts";
+import { highlightFont, mainFont } from "../app/fonts/fonts";
 
 const TimeLine = () => {
     return (

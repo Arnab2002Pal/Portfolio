@@ -61,7 +61,7 @@ const Project = () => {
 
                 </div>
             </div>
-            <div className="h-full w-full flex flex-col md:flex-row md:mt-4 justify-center items-center md:items-start gap-4 py-2 md:py-0 md:overflow-x-auto ">
+            <div className="h-full w-full flex flex-col md:flex-row md:mt-4 justify-center items-center md:items-start gap-4 py-2 md:py-0 md:overflow-x-auto cursor-default">
                 {
                     projects.map((project, index) => (
                         <div
@@ -80,7 +80,7 @@ const Project = () => {
                                 />
                             </div>
                             {/* Text Section */}
-                            <div className="w-full h-1/3 flex flex-col justify-center items-center">
+                            <div className="w-full h-1/3 flex flex-col justify-center items-center cursor-default">
                                 <h4 className="text-base md:text-xl font-semibold text-white">
                                     {project.title}
                                 </h4>
@@ -104,7 +104,7 @@ const Project = () => {
                         exit={{ opacity: 0 }}
                     >
                         <motion.div
-                            className="w-11/12 md:w-2/3 lg:w-3/4 rounded-2xl shadow-lg p-4 relative border-2 lg:border-4 bg-stone-950 flex flex-col "
+                            className="w-11/12 md:w-2/3 lg:w-3/4 rounded-2xl shadow-lg p-4 relative border-2 lg:border-4 border-neutral-300 bg-stone-950 flex flex-col "
                             onClick={(e) => e.stopPropagation()}
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}

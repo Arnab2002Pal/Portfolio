@@ -13,7 +13,8 @@ const Intro = () => {
     };
     {/* Add a container to center the circle */ }
     return (
-        <div className="absolute top-64 lg:top-80 left-0 w-full h-[47.5vh] lg:h-[44.5vh] bg-black bg-opacity-60">
+        <div
+         className="absolute top-64 lg:top-80 left-0 w-full h-[47.5vh] lg:h-[44.5vh] bg-black bg-opacity-60">
             <div className="flex flex-col items-center justify-around h-80 lg:h-96 relative bottom-[5rem] lg:bottom-[6rem]">
                 <div className="w-full flex justify-center h-full">
                     <div className="relative ">
@@ -53,19 +54,25 @@ const Intro = () => {
                             whileHover={hoverAnimation}
                             className="hover:text-white cursor-pointer"
                         >
-                            <FaXTwitter size={30} />
+                            <a href={process.env.NEXT_PUBLIC_X} target='_blank'>
+                                <FaXTwitter size={30} />
+                            </a>
                         </motion.div>
                         <motion.div
                             whileHover={hoverAnimation}
                             className="hover:text-white cursor-pointer"
                         >
-                            <FaGithub size={30} />
+                            <a href={process.env.NEXT_PUBLIC_GITHUB} target='_blank'>
+                                <FaGithub size={30} />
+                            </a>
                         </motion.div>
                         <motion.div
                             whileHover={hoverAnimation}
                             className="hover:text-white cursor-pointer"
                         >
-                            <FaLinkedin size={30} />
+                            <a href={process.env.NEXT_PUBLIC_LINKEDIN} target='_blank'>
+                                <FaLinkedin size={30} />
+                            </a>
                         </motion.div>
                     </div>
                 </div>
