@@ -3,14 +3,14 @@ import { highlightFont, mainFont } from "../app/fonts/fonts";
 
 const TimeLine = () => {
     return (
-        <div className='h-screen flex flex-col items-center gap-5 md:gap-10 mt-16 md:mt-0 '>
+        <div className='h-screen flex flex-col items-center gap-5 md:gap-10 mt-10 md:mt-0 '>
             <div className={`${mainFont.className} w-full flex-col justify-center text-center items-center h-20`}>
                 <h3 className="text-2xl md:text-5xl font-semibold bg-gradient-to-bl from-gray-600 via-gray-200 to-gray-600 bg-clip-text text-transparent">Milestones of <span className={`${highlightFont.className} text-white `}>Growth</span></h3>
                 <p className="text-sm md:text-xl mt-2 text-center text-wrap px-2">
                     A Journey of Innovation and Growth in the Tech World
                 </p>
             </div>
-            <div className='w-[55vw] overflow-y-auto lg:overflow-hidden mb-10'>
+            <div className='w-[55vw] overflow-y-auto lg:overflow-hidden'>
                 <ol className="relative border-s border-gray-700 mx-2 ">
                     <li className="mb-7 ms-4">
                         <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-white"></div>

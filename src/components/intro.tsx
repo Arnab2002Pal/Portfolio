@@ -14,7 +14,7 @@ const Intro = () => {
     {/* Add a container to center the circle */ }
     return (
         <div
-         className="absolute top-72 lg:top-96 left-0 w-full h-[50vh] lg:h-[44.5vh] bg-black bg-opacity-60">
+         className="absolute top-[16.7rem] lg:top-80 left-0 w-full h-[46vh] lg:h-[44.5vh] bg-black bg-opacity-60">
             <div className="flex flex-col items-center justify-around h-80 lg:h-96 relative bottom-[5rem] lg:bottom-[6rem]">
                 <div className="w-full flex justify-center h-full">
                     <div className="relative ">

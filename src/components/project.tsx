@@ -51,7 +51,7 @@ const Project = () => {
     };
 
     return (
-        <div className="h-screen lg:h-[90vh] mb-10 md:mb-0 flex flex-col justify-center items-start ">
+        <div className="h-screen lg:h-[90vh] flex flex-col justify-center items-start ">
             <div className="flex flex-col justify-center items-start mt-40 md:mt-20 w-full">
                 <div className={`${mainFont.className} w-full h-[18vh] flex flex-col justify-center items-center pb-10 md:pb-0 `}>
                     <h3 className="text-2xl md:text-5xl font-semibold py-2 bg-gradient-to-tl from-gray-600 via-gray-200 to-gray-600 bg-clip-text text-transparent"><span className={`${highlightFont.className} text-white `}>Projects </span>That Define Me</h3>
