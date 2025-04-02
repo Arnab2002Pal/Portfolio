@@ -1,4 +1,5 @@
 import image1 from "../../../public/assets/KuberSS.png"
+import image2 from "../../../public/assets/AutoReviewer.png"
 import error_Image from "../../../public/assets/error_image.jpg"
 import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -8,6 +9,7 @@ import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { SiNestjs } from "react-icons/si";
 import { FaPhoenixFramework } from "react-icons/fa";
 import { BiLogoMongodb } from "react-icons/bi";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -43,6 +45,26 @@ export const projects = [
         skills: ["Typescript", "Frontend - NextJs", "Backend - NodeJs", "ExpressJs", "AWS EC2", "NginX", "Docker", "Gemini", "PostgreSQL", "Redis", "PostgreSQL"],
     },
     {
+        title: "Auto Reviewer",
+        subtitle: "AI-Powered Code Review Tool",
+        summary: "An AI-driven GitHub PR review tool automating bug detection and performance optimization for faster code reviews.",
+        description: [
+            "Developed an automated GitHub code review tool using the Gemini API, analyzing clients pull requests daily for bugs and performance enhancements.",
+            "Built a scalable Node.js backend with Prisma and BullMQ, optimizing task queuing and caching.",
+            "Containerized with Docker, deployed on AWS EC2, and automated deployments via CI/CD pipelines.",
+            "Reduced manual review time by 40% with APIs for analyzing code changes, tracking tasks, and retrieving results."
+        ],
+        image: image2,
+        altText: "Image Yet To Be Added to Project",
+        links: {
+            github: "https://github.com/Arnab2002Pal/Code_Review",
+            website: "https://auto-reviewer.arnab-personal.tech/",
+            notion: "https://www.notion.so/Code-Reviewer-15791fcbd835800886a7d25c2071eed4?pvs=4",
+            demo: "",
+        },
+        skills: ["Typescript", "NextJs", "NodeJs", "ExpressJs", "PostgreSQL", "AWS EC2", "NginX", "Docker", "Gemini", "Redis", "BullMQ"],
+    },
+    {
         title: "Vercel Clone",
         subtitle: "Vercel Clone Lite: The Sleek Alternative",
         summary: "A lightweight Vercel alternative with modular servers for faster deployment React based application deployment.",
@@ -61,27 +83,7 @@ export const projects = [
             demo: "",
         },
         skills: ["Typescript", "NodeJs", "ExpressJs", "PostgreSQL", "AWS EC2, S3", "NginX", "Docker", "Gemini", "Redis"],
-    },
-    {
-        title: "Github PR Reviewer",
-        subtitle: "AI-Powered Code Review Tool",
-        summary: "An AI-driven GitHub PR review tool automating bug detection and performance optimization for faster code reviews.",
-        description: [
-            "Developed an automated GitHub code review tool using the Gemini API, analyzing 50+ pull requests daily for bugs and performance enhancements.",
-            "Built a scalable Node.js backend with Prisma and BullMQ, optimizing task queuing and caching.",
-            "Containerized with Docker, deployed on AWS EC2, and automated deployments via CI/CD pipelines.",
-            "Reduced manual review time by 40% with APIs for analyzing code changes, tracking tasks, and retrieving results."
-        ],
-        image: error_Image,
-        altText: "Image Yet To Be Added to Project",
-        links: {
-            github: "https://github.com/Arnab2002Pal/Code_Review",
-            website: "",
-            notion: "https://www.notion.so/Code-Reviewer-15791fcbd835800886a7d25c2071eed4?pvs=4",
-            demo: "",
-        },
-        skills: ["Typescript", "NodeJs", "ExpressJs", "PostgreSQL", "AWS EC2", "NginX", "Docker", "Gemini", "Redis", "BullMQ"],
-    },
+    }
 ];
 
 export const programming_languages = [
@@ -93,24 +95,29 @@ export const programming_languages = [
 
 export const web_technologies = [
     {
-        name: "React.Js",
+        name: "ReactJs",
         icon: <FaReact size={25} className="text-blue-400" />, // React's original branding color
         shadowColor: "rgba(59, 130, 246, 0.5)" // Light blue shadow
     },
     {
-        name: "Node.Js",
+        name: "NodeJs",
         icon: <FaNodeJs size={25} className="text-green-500" />, // Node.js green
         shadowColor: "rgba(34, 197, 94, 0.5)" // Green shadow
     },
     {
-        name: "Express.Js",
+        name: "ExpressJs",
         icon: <SiExpress size={25} className="text-gray-300" />, // Neutral light gray for Express
         shadowColor: "rgba(156, 163, 175, 0.5)" // Soft gray shadow
     },
     {
-        name: "Next.Js",
+        name: "NextJs",
         icon: <RiNextjsFill size={25} className="text-white" />, // Black as Next.js branding
         shadowColor: "rgba(225, 225, 225, 0.5)" // white shadow
+    },
+    {
+        name: "NestJs",
+        icon: <SiNestjs size={25} className="text-red-500" />, // Black as Next.js branding
+        shadowColor: "rgba(239, 68, 68, 0.5)" // red shadow
     },
     {
         name: "Phoenix",

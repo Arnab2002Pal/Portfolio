@@ -59,7 +59,7 @@ export default function Home() {
           whileInView="visible"
           viewport={{ once: true }}
           id="experince_section"
-          className="h-screen lg:px-28 lg:mb-20">
+          className="h-[48rem] md:h-[90rem] lg:h-[63rem] lg:px-28">
           <div>
             <div className="w-full flex items-center justify-center">
               <div className="w-[20rem] lg:w-[70rem] full relative">

@@ -142,6 +142,16 @@ const Project = () => {
                                     </div>
                                     <div className="w-full flex flex-wrap gap-2 lg:gap-4 justify-start items-center mt-2 lg:mt-0">
                                         <span className="text-base lg:text-lg font-medium">Visit:</span>
+                                        {selectedProject?.links.website && (
+                                            <a
+                                                href={selectedProject?.links.website}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-xs md:text-base px-3 py-1 bg-neutral-600 text-white rounded-lg hover:bg-white hover:text-neutral-700 font-medium transition-transform transform hover:scale-105"
+                                            >
+                                                Live
+                                            </a>
+                                        )}
                                         {selectedProject?.links.notion && (
                                             <a
                                                 href={selectedProject?.links.notion}
@@ -162,16 +172,7 @@ const Project = () => {
                                                 GitHub
                                             </a>
                                         )}
-                                        {selectedProject?.links.website && (
-                                            <a
-                                                href={selectedProject?.links.website}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-xs md:text-base px-3 py-1 bg-neutral-600 text-white rounded-lg hover:bg-white hover:text-neutral-700 font-medium transition-transform transform hover:scale-105"
-                                            >
-                                                Live
-                                            </a>
-                                        )}
+                                        
                                         {selectedProject?.links.demo && (
                                             <a
                                                 href={selectedProject?.links.demo}
